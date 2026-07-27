@@ -1,0 +1,53 @@
+# Playwright Hybrid Automation Framework (API + UI Integration)
+
+An end-to-end test automation framework built with **Playwright** and **JavaScript**, implementing a **Hybrid E2E Strategy** to optimize execution speed and stability.
+
+---
+
+## 📌 Key Architectural Highlights
+
+* **API Preconditions**: Offloads heavy setup workflows (Account Creation & User Login) to background API requests (`beforeAll` hook).
+* **Dynamic CSRF & Authentication**: Automates CSRF middleware token extraction and injects cookies directly into headers.
+* **State Preservation**: Saves authenticated browser context into `state.json` (`storageState`), bypassing slow UI authentication forms.
+* **Page Object Model (POM)**: Modularity and maintenance-friendly design separating locators and actions from test scripts.
+* **Data-Driven Approach**: Externalized test data parameters using JSON configuration files.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Automation Tool:** Playwright
+* **Language:** JavaScript (Node.js)
+* **Architecture:** Page Object Model (POM)
+* **Design Pattern:** Hybrid (API Setup + UI Functional Validation)
+* **Reporting:** Allure Reporter / Playwright HTML Reporter
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### 2️⃣ Installation
+Clone the repository and install dependencies:
+```bash
+git clone [https://github.com/MoameniBrahim-sys/Playwright-Hybrid-API-UI-Framework.git](https://github.com/MoameniBrahim-sys/Playwright-Hybrid-API-UI-Framework.git)
+cd Playwright-Hybrid-API-UI-Framework
+npm install
+
+3️⃣ Running Tests
+Execute the E2E test suite in headless mode:
+
+Bash
+npx playwright test
+Execute tests in UI/Headed mode:
+
+Bash
+npx playwright test --headed
+4️⃣ Generate Reports
+Generate and view the Allure execution report:
+
+Bash
+npx playwright test --reporter=allure-playwright
+npx allure serve allure-results
