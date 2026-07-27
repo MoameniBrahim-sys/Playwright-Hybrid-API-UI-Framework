@@ -1,0 +1,18 @@
+[{
+"name" : "Mohamed2" , 
+"Password" : "Codelab@123" , 
+"FirstName" : "Mohamed",
+"LastName" : "Yassen",
+"Company":"RGB",
+"Address":"Nasr City",
+"State":"Cairo",
+"City":"Cairo",
+"ZipCode":"129948",
+"MobileNumber":"01256983650",  
+"Search_Product":"T-Shirt",
+"nameOnCard":"Mohamed Axxx",
+"CardNumber":"45896324780123",
+"cvc":"020",
+"ExpiryMonth":"01",
+"ExpiryYear":"2060"
+}]
